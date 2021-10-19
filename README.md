@@ -1,2 +1,2 @@
-# Declarativ Style for Fyne UI
+# Declarative Style for Fyne UI
 Fyne declarative ext.
