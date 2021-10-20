@@ -4,7 +4,7 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-// Textgrid
+// TextGrid
 func TextGrid(id ...string) *widget.TextGrid {
 	grid := widget.NewTextGrid()
 	if id[0] != "" {
