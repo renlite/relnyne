@@ -1,7 +1,7 @@
 package main
 
 import (
-	rl "renlite/go_fyne"
+	rl "renlite/relnyne"
 
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
@@ -14,13 +14,13 @@ func main() {
 
 	win.SetContent(container.NewVBox(
 		rl.Lable("Fyne!", "#01"),
-		w.NewButton("Say Hello!", click),
+		w.NewButton("Say Hello!", clickHi),
 	))
 
 	win.ShowAndRun()
 }
 
-func click(){
+func clickHi(){
 	// Option 1
 	rl.GetLabel("#01").SetText("Hello Fyne!")
 	// Option 2
