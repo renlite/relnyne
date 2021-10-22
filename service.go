@@ -12,7 +12,7 @@ type service struct {
 	widgets map[string]fyne.CanvasObject
 	layouts map[string]fyne.Container
 	data    map[string]interface{}
-	status  map[string]string
+	state  map[string]string
 }
 
 var srv *service
@@ -23,7 +23,7 @@ func getSrv() *service {
 			widgets: make(map[string]fyne.CanvasObject),
 			layouts: make(map[string]fyne.Container),
 			data:    make(map[string]interface{}),
-			status:  make(map[string]string),
+			state:  make(map[string]string),
 		} // <-- thread safe
 	})
 	return srv
@@ -37,6 +37,10 @@ func GetLayout(id string) fyne.Container {
 	return getSrv().layouts[id]
 }
 
-func GetStore(id string) interface{} {
+func GetData(id string) interface{} {
 	return getSrv().data[id]
+}
+
+func GetState(id string) string {
+	return getSrv().state[id]
 }
