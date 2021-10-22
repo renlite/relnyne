@@ -12,7 +12,7 @@ type service struct {
 	widgets map[string]fyne.CanvasObject
 	layouts map[string]fyne.Container
 	data    map[string]interface{}
-	state  map[string]string
+	state   map[string]string
 }
 
 var srv *service
