@@ -4,7 +4,7 @@ This library is still in development and is not ready to be used.
 
 Relnyne is a very lightweigt extention of [Fyne Widgets](https://github.com/fyne-io/fyne/tree/master/widget) to describe the UI in a declarative way and offers a simple data and state container to manage the state and update. In opposite to [Fyne UI](https://github.com/fyne-io/fyne) [DataBinding](https://github.com/fyne-io/fyne/tree/master/data/binding) Relnyne is more DOM like, which should offer more direkt control over rendering.
 
-A comparison of code blocks will be placed into the example order.
+A comparison of code blocks will be placed into the [examples](https://github.com/renlite/relnyne/tree/master/examples) order.
 
 ```go
 package main
